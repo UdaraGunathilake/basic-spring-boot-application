@@ -17,10 +17,11 @@ ConstraintValidator - Used to validate domain classes just by adding a annotatio
 
 ## Build Application
 
-mvnw clean install -Dspring.profiles.active=local
-Running Application
+mvnw clean install -Dspring.profiles.active=local <br />
 
-spring boot run command :
+## Running Application
+
+spring boot run command : <br />
 
 mvnw spring-boot:run -Dspring.profiles.active=local
 
