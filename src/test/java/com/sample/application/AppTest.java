@@ -1,4 +1,4 @@
-package com.adl.selfonboarding;
+package com.sample.application;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
