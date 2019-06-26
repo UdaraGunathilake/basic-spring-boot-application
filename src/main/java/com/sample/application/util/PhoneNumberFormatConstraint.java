@@ -9,6 +9,9 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
+/**
+ * Constraint Used to validate phone numbers
+ */
 @Documented
 @Constraint(validatedBy = PhoneNumberValidator.class)
 @Target({ ElementType.METHOD, ElementType.FIELD })

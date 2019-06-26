@@ -9,7 +9,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import com.sample.application.exceptions.InternalErrorException;
-	
+
+/**
+ * Repository Aspect used to handle repository level exceptions and log
+ * repository level process logs.
+ */
 @Aspect
 @Component
 public class RepositoryAspect {

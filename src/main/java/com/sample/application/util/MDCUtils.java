@@ -4,6 +4,9 @@ import org.slf4j.MDC;
 
 import com.sample.application.enums.GDCType;
 
+/**
+ * Util Used to maintain MDC related tasks
+ */
 public final class MDCUtils {
 
 	private MDCUtils() {

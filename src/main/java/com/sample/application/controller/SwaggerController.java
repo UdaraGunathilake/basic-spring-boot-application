@@ -9,6 +9,11 @@ import org.springframework.web.servlet.view.RedirectView;
 
 import springfox.documentation.annotations.ApiIgnore;
 
+/**
+ * Swagger Contoller is the place where swagger API documantation exposed to out
+ * side.
+ * 
+ */
 @ApiIgnore
 @RestController("swaggerController")
 public class SwaggerController {

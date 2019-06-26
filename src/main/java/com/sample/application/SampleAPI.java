@@ -6,6 +6,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
+/**
+ * Main Class for the service
+ *
+ */
 @SpringBootApplication
 public class SampleAPI {
 	private static final Logger LOGGER = LoggerFactory.getLogger(SampleAPI.class);
@@ -13,8 +17,8 @@ public class SampleAPI {
 	public static void main(String[] args) {
 
 		LOGGER.info("Sample Spring Boot API Starting up..!!");
-		
+
 		SpringApplication.run(SampleAPI.class, args);
 
-		}
+	}
 }

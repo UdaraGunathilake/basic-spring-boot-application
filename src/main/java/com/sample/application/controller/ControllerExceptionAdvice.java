@@ -26,6 +26,10 @@ import com.sample.application.exceptions.BaseException;
 import com.sample.application.exceptions.ValidationException;
 import com.sample.application.model.BaseExceptionResponse;
 	
+/**
+ * Advisor Class used in all Controllers to handle exceptions.
+ * 
+ */
 @ControllerAdvice
 public class ControllerExceptionAdvice {
 

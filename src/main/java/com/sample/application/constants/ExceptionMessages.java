@@ -1,5 +1,9 @@
 package com.sample.application.constants;
 
+/**
+ * Exception Messages container
+ *
+ */
 public final class ExceptionMessages {
 
 	public static final String BASE_DEFAULT = "An internal server error has occured.";

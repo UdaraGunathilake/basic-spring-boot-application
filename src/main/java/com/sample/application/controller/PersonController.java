@@ -20,6 +20,11 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import springfox.documentation.spring.web.json.Json;
 
+/**
+ * 
+ * Person Controller containing all controller methods relate to Person
+ *
+ */
 @Api("Sample Spring Boot API")
 @RestController("PersonController")
 @RequestMapping("/person")
@@ -29,7 +34,8 @@ public class PersonController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(PersonController.class);
 
 	/**
-	 * Add Person/ Create New Person 
+	 * Add Person/ Create New Person
+	 * 
 	 * @param person
 	 * @return person
 	 */
@@ -40,7 +46,7 @@ public class PersonController {
 
 		LOGGER.info("PersonController method Called : Add Person process initiated");
 
-			return person;
+		return person;
 
-	}	
+	}
 }

@@ -1,4 +1,4 @@
-package com.sample.application.util;
+package com.sample.application.interceptor;
 
 import java.net.UnknownHostException;
 import java.util.UUID;
@@ -13,7 +13,14 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import com.sample.application.enums.GDCType;
+import com.sample.application.util.MDCUtils;
 
+/**
+ * Interceptor used to create a CorrelationId for each request and maintain it
+ * through whole proccess. Using this each request and related tasks can be
+ * monitored and logged easily.
+ * 
+ */
 @Component
 public class CorrelationIdInterceptor extends HandlerInterceptorAdapter {
 
