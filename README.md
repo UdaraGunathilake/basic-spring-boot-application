@@ -8,11 +8,20 @@ Interceptor - CorrelationId Interceptor <br />
 Swagger - API documantation <br />
 ControllerAdvicer - Controller Level Exception Handling<br />
 Aspect - Repository Aspect <br />
-
+Spring Profiles <br/>
 
 CorrelationId - to log and handle each request separetly <br />
 JPA - Handle Database transactions <br />
 MDC - Maintain CorrelationId through out the request <br />
 ConstraintValidator - Used to validate domain classes just by adding a annotation <br />
+
+## Build Application
+
+mvnw clean install -Dspring.profiles.active=local
+Running Application
+
+spring boot run command :
+
+mvnw spring-boot:run -Dspring.profiles.active=local
 
 
