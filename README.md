@@ -1,6 +1,8 @@
 # Sample Spring Boot API
 
-Imlplemented to demonstrate on how to develop basic Spring Boot application.
+Imlplemented to demonstrate on how to develop basic Spring Boot application. <br />
+MySQL as the database. <br />
+Log4j2 for logging.
 
 ## Features that used in the application
 
