@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+       <Properties>
+              <Property name="log-path">/logs/self-onboarding-service</Property>
+              <Property name="archive-path">${log-path}/archive</Property>
+              <Property name="lgFilePrefix">${hostName}</Property>
+       </Properties>
+       <Appenders>
+              <Console name="Console" target="SYSTEM_OUT">
+                     <PatternLayout
+                           pattern="%d{MM-dd-yyyy HH:mm:ss}{GMT+5:30}|[%level]|RID:%X{CRID}|[%C]|line:%L|%m%n"/>
+              </Console>
+
+              <!-- roll over the file based on the most specific time unit in the date pattern in file pattern (here per day)" -->
+              <RollingFile name="mainLog"
+                     fileName="${log-path}/mainLog-${lgFilePrefix}.log"
+                     filePattern="${archive-path}/mainLog-${lgFilePrefix}.%d{yyyy-MM-dd}.%i.log.gz">
+                     <PatternLayout
+                           pattern="%d{MM-dd-yyyy HH:mm:ss}{GMT+5:30}|[%level]|RID:%X{CRID}|[%C]|line:%L|%m%n"/>
+                     <Policies>
+                            <SizeBasedTriggeringPolicy size="20 MB" />   <!-- roll based on size -->
+                            <TimeBasedTriggeringPolicy />   <!-- roll based on time -->
+                     </Policies>
+                     <!--<DefaultRolloverStrategy max="300000" />-->
+              </RollingFile>
+       </Appenders>
+
+       <Loggers>
+              <Root level="DEBUG">
+                     <AppenderRef ref="Console" level="info" />
+                     <AppenderRef ref="mainLog" level="info" />
+              </Root>
+       </Loggers>
+</Configuration>
